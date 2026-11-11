@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe4ef">
+<title>إلى سلمى بكل الحب</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--blush:#ffe4ef;--pink:#f5a9ca;--hot:#d95b99;--plum:#87506f;--lilac:#eadcf8;--gold:#d8ad75;--ink:#70435f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'Cairo',Tahoma,sans-serif;background:radial-gradient(circle at 12% 8%,#fff 0 5%,transparent 28%),radial-gradient(circle at 90% 82%,#f6cde2 0,transparent 34%),linear-gradient(145deg,#fff0f6,#f9e8f5 48%,#eee5fb);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.42;background-image:radial-gradient(#fff 1.3px,transparent 1.3px);background-size:25px 25px}
+.glow{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(80px);opacity:.38;pointer-events:none}.g1{background:#ffb8d5;top:-90px;right:-60px}.g2{background:#d8baf4;bottom:-110px;left:-70px}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:25px 14px;position:relative}
+.panel{width:min(100%,490px);position:relative;padding:33px 23px 27px;border:2px solid #fff;border-radius:34px;background:linear-gradient(150deg,#ffffffed,#fff9fce8);box-shadow:0 22px 65px #b96d9630,0 0 0 7px #f8dce955,inset 0 1px #fff;text-align:center;overflow:hidden}
+.panel:before{content:"";position:absolute;inset:9px;border:1px dashed #e7b3cc;border-radius:26px;pointer-events:none}
+.ornament{color:#d69ab7;letter-spacing:5px;font-size:12px;margin-bottom:12px}
+.brand{font-family:'Playfair Display',serif;color:#c17b9e;font-size:13px;letter-spacing:2.5px;text-transform:uppercase}
+.bigheart{font-size:53px;display:block;margin:12px auto 6px;filter:drop-shadow(0 5px 8px #e78bb866);animation:beat 2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+h1{font-size:28px;line-height:1.55;margin:8px 0;color:#9d5279;font-weight:800}
+.subtitle{font-size:14px;line-height:2;color:#9c718a;margin:7px auto 20px;max-width:340px}
+.line{height:2px;width:90px;background:linear-gradient(90deg,transparent,#e9b9ce,#d9b7e9,transparent);margin:19px auto;border-radius:3px}
+.inputbox{position:relative;margin:20px 0 12px}
+input[type=password]{width:100%;border:1px solid #edc2d8;border-radius:18px;padding:16px 18px;background:#fffafd;color:#8d4d70;text-align:center;font-family:inherit;font-size:16px;outline:none;transition:.25s;box-shadow:inset 0 2px 5px #d89db51a}
+input:focus{border-color:#dc8eb4;box-shadow:0 0 0 4px #e88bb522}
+input::placeholder{color:#c69bb1}
+.btn{width:100%;border:0;border-radius:18px;padding:15px 20px;margin-top:8px;color:white;background:linear-gradient(110deg,#ed9fc2,#d66f9f 55%,#bd83c8);font-family:inherit;font-weight:800;font-size:16px;box-shadow:0 9px 22px #d77aa344;cursor:pointer;transition:.2s}
+.btn:active{transform:scale(.98)}
+.error{min-height:25px;color:#c24f85;font-size:13px;margin-top:8px}
+.tiny{font-size:11px;color:#b98ba5;margin-top:14px}
+#inside{display:none}
+.note{position:relative;background:linear-gradient(145deg,#fff5fa,#fffafd);border:1px solid #f1cadd;border-radius:23px;padding:22px 17px;margin:18px 0;color:#91617d;line-height:2.15;font-size:15px;box-shadow:0 8px 22px #d69bb51c}
+.note:before,.note:after{content:"✿";position:absolute;color:#e5a5c4;font-size:18px}.note:before{top:7px;right:12px}.note:after{bottom:7px;left:12px}
+.note strong{color:#c45d91}
+.section-title{font-size:16px;color:#bb7197;margin:22px 0 10px;font-weight:800}
+.memory-gallery{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:13px 0 20px}
+.memory-gallery figure{margin:0;background:#fff;border:1px solid #f1d0df;border-radius:19px;padding:7px;overflow:hidden;box-shadow:0 7px 18px #c887a51c}
+.memory-gallery figure:first-child{grid-column:1/-1}
+.memory-gallery img{display:block;width:100%;height:190px;object-fit:cover;border-radius:13px}
+.memory-gallery figure:first-child img{height:260px}
+.memory-gallery figcaption{font-size:12px;color:#a96d8d;padding:8px 2px 3px}
+.footer{margin-top:23px;font-family:'Playfair Display',serif;color:#c58eaa;font-size:12px;letter-spacing:1px}
+.music-fallback{display:none;margin:10px auto 0;padding:9px 17px;border:1px solid #e7b5ce;border-radius:15px;background:#fff5fa;color:#a4517b;font:inherit;font-size:13px;cursor:pointer}
+.float{position:fixed;bottom:-30px;color:#e58db5;opacity:0;animation:rise 10s linear infinite;pointer-events:none;text-shadow:0 2px 6px #fff}
+@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.48}85%{opacity:.28}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:380px){.panel{padding:28px 18px 23px}h1{font-size:25px}.memory-gallery figure:first-child img{height:225px}}
+</style>
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<div class="wrap">
+<main class="panel">
+  <section id="gate">
+    <div class="ornament">✦ ───── ♡ ───── ✦</div>
+    <div class="brand">A little pink love letter</div>
+    <span class="bigheart">💗</span>
+    <h1>إلى أجمل سلمى في الدنيا</h1>
+    <p class="subtitle">حضّرتلك حاجة صغيرة مليانة حب ودلع… عشان إنتِ تستاهلي كل الحلو.</p>
+    <div class="line"></div>
+    <div class="inputbox"><input id="password" type="password" placeholder="اكتبي كلمة السر هنا" autocomplete="off"></div>
+    <button class="btn" id="enter" type="button">افتحي رسالتي&nbsp; ♡</button>
+    <div class="error" id="error" aria-live="polite"></div>
+    <div class="tiny">MADE WITH LOVE · JUST FOR SALMA</div>
+  </section>
+
+  <section id="inside">
+    <div class="ornament">✦ ───── ♡ ───── ✦</div>
+    <div class="brand">A love letter made for Salma</div>
+    <span class="bigheart">❤️</span>
+    <h1>سلمى… يا وردة قلبي 🌷</h1>
+    <div class="line"></div>
+    <div class="note">
+      يا سلمى يا قمر قلبي ويا أحلى حاجة في أيامي…<br>
+      إنتِ مش بس حبيبتي، إنتِ الضحكة اللي بتهوّن عليّا الدنيا، والحنية اللي مفيش زيّها.<br>
+      لو زعلتك في يوم، فحقك عليّا يا روح قلبي. أنا نفسي أشوف ضحكتك دايمًا، وأفضل سبب في فرحتك مش زعلك.<br>
+      <strong>بحبك يا سوسو… يا أجمل بنوتة في الدنيا، ويا حتة السكر اللي محليّة حياتي كلها 💗</strong>
+    </div>
+
+    <div class="section-title">♡ أجمل ذكرياتنا سوا ♡</div>
+    <div class="memory-gallery">
+      <figure><img src="memory-1.jpeg" alt="صورتنا سوا"><figcaption>أحلى صورة لينا ❤️</figcaption></figure>
+      <figure><img src="memory-2.jpeg" alt="باقة ورد"><figcaption>ورد ليكي يا سلمى 🌹</figcaption></figure>
+      <figure><img src="memory-3.jpeg" alt="ذكرى جميلة"><figcaption>كل لحظة معاكي ذكرى حلوة</figcaption></figure>
+    </div>
+    <div class="section-title">♡ وكل صورة ليها حكاية ♡</div>
+    <audio id="player" preload="auto" playsinline></audio>
+    <div id="musicHint" class="tiny">♫ أغنيتنا الخاصة</div>
+    <button id="musicFallback" class="music-fallback" type="button">شغّلي أغنيتنا يا سوسو ♡</button>
+    <div class="footer">FOREVER & ALWAYS · A ♥ S</div>
+  </section>
+</main>
+</div>
+<script>
+(function(){
+ const $=id=>document.getElementById(id);
+ function norm(s){return s.trim().replace(/[ًٌٍَُِّْـٰ]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/[\u200e\u200f\u202a-\u202e]/g,'').replace(/\s+/g,'')}
+ function unlock(){
+   const value=norm($('password').value);
+   if(value!==norm('احمد بيحب سلمي') && value!==norm('احمد بيحب سلمى')){
+     $('error').textContent='مش دي الكلمة يا قمر… جربي تاني 💗';return;
+   }
+   $('gate').style.display='none';$('inside').style.display='block';
+   const player=$('player');
+   player.src='song.mp4';player.loop=true;
+   player.play().then(()=>{
+     $('musicHint').textContent='♫ أغنيتنا شغّالة يا سوسو';
+   }).catch(()=>{
+     $('musicHint').textContent='دوسي هنا عشان تسمعي أغنيتنا ♡';
+     $('musicFallback').style.display='inline-block';
+   });
+ }
+ $('enter').addEventListener('click',unlock);
+ $('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+ $('musicFallback').addEventListener('click',function(){
+   $('player').play().then(()=>{
+     this.style.display='none';$('musicHint').textContent='♫ أغنيتنا شغّالة يا سوسو';
+   }).catch(()=>{$('musicHint').textContent='مش قادر أشغّل الملف في المتصفح ده';});
+ });
+ for(let i=0;i<18;i++){
+   const h=document.createElement('span');h.className='float';h.textContent=['♡','♥','✿','୨୧'][i%4];
+   h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*10)+'s';
+   h.style.fontSize=(13+Math.random()*17)+'px';document.body.appendChild(h);
+ }
+})();
+</script>
+</body>
+</html>
