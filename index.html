@@ -87,7 +87,7 @@ input::placeholder{color:#c69bb1}
     <div class="section-title">♡ وكل صورة ليها حكاية ♡</div>
     <audio id="player" preload="auto" playsinline></audio>
     <div id="musicHint" class="tiny">♫ أغنيتنا الخاصة</div>
-    <button id="musicFallback" class="music-fallback" type="button">شغّلي أغنيتنا يا سوسو ♡</button>
+    <button id="musicFallback" class="music-fallback" type="button">شغّلي أغنيتنا يا سلمتي  ♡</button>
     <div class="footer">FOREVER & ALWAYS · A ♥ S</div>
   </section>
 </main>
@@ -105,7 +105,7 @@ input::placeholder{color:#c69bb1}
    const player=$('player');
    player.src='song.mp4';player.loop=true;
    player.play().then(()=>{
-     $('musicHint').textContent='♫ أغنيتنا شغّالة يا سوسو';
+     $('musicHint').textContent='♫ أغنيتنا شغّالة يا سلومتي';
    }).catch(()=>{
      $('musicHint').textContent='دوسي هنا عشان تسمعي أغنيتنا ♡';
      $('musicFallback').style.display='inline-block';
@@ -115,7 +115,7 @@ input::placeholder{color:#c69bb1}
  $('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
  $('musicFallback').addEventListener('click',function(){
    $('player').play().then(()=>{
-     this.style.display='none';$('musicHint').textContent='♫ أغنيتنا شغّالة يا سوسو';
+     this.style.display='none';$('musicHint').textContent='♫ أغنيتنا شغّالة يا سلومتي';
    }).catch(()=>{$('musicHint').textContent='مش قادر أشغّل الملف في المتصفح ده';});
  });
  for(let i=0;i<18;i++){
